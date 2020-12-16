@@ -10,20 +10,20 @@ class RotateArray
     { 
        int i,temp;
        temp = arr[0];
-       for(i=0;i<n;i++)
+       for(i=0;i<n-1;i++)
          arr[i] = arr[i+1];
        arr[n-1] = temp;
      }
      void printArray(int arr[],int n)
      {
        for(int i=0;i<n;i++)
-         System.out.println(arr[i] + " ");
+         System.out.print(arr[i] + " ");
      }
      public static void main(String[] args)
      { 
        RotateArray rotate = new RotateArray();
        int arr[] = {1,2,3,4,5,6,7};
-       leftRotate(arr,7,2);
-       printArray(arr,7);
+       rotate.leftRotate(arr,7,2);
+       rotate.printArray(arr,7);
      }
    }
