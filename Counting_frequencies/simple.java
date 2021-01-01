@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main
 {
   public static void countFreq (int arr[], int n)
